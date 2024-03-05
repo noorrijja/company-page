@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <header>
+      <div class="expanded-menu-icon">
+        <button class="close">
+          <img
+            src="./images/icon-close.svg"
+            alt="close icon"
+            class="close-icon"
+          />
+        </button>
+        <div class="list-items">
+          <ul>
+            <li class="item">Collections</li>
+            <li class="item">Men</li>
+            <li class="item">Women</li>
+            <li class="item">About</li>
+            <li class="item">Contact</li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <nav class="nav-items">
+      <div class="nav-left">
+        <button class="hamburger">
+          <img
+            src="./images/icon-menu.svg"
+            alt="menu icon"
+            class="hamburger-menu-icon"
+          />
+        </button>
+        <div class="nav-logo">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+        </div>
+      </div>
+      <div class="nav-right">
+        <div class="cart-image">
+          <img src="./images/icon-cart.svg" alt="cart icon" class="cart" />
+        </div>
+        <div class="user-profile">
+          <img
+            src="./images/image-avatar.png"
+            alt="user profile photo"
+            class="profile"
+          />
+        </div>
+      </div>
+    </nav>
+    <div class="image-box">
+      <button class="prev">
+      </button>
+      <button class="next">
+      </button>
+      <div class="product-gallery">
+        <img
+          src="./images/image-product-1-thumbnail.jpg"
+          alt="product image"
+          class="img-1 product-image"
+        />
+        <img
+          src="./images/image-product-2-thumbnail.jpg"
+          alt="product image"
+          class="img-2 product-image"
+        />
+        <img
+          src="./images/image-product-3-thumbnail.jpg"
+          alt="product image"
+          class="img-3 product-image"
+        />
+        <img
+          src="./images/image-product-4-thumbnail.jpg"
+          alt="product image"
+          class="img-4 product-image"
+        />
+      </div>
+    </div>
+    <div class="content-box">
+      <p class="company">Sneaker Company</p>
+      <h1 class="product-title">Fall Limited Edition Sneakers</h1>
+      <p class="product-desc">
+        These low-profile sneakers are your perfect casual wear companion.
+        Featuring a durable rubber outer sole, they’ll withstand everything the
+        weather can offer.
+      </p>
+      <div class="price-box">
+        <div class="sale-price">
+          <p class="sale">$125.00</p>
+          <div class="off">50%</div>
+        </div>
+        <div class="fullprice">
+          <s>$250.00</s>
+        </div>
+      </div>
+      <div class="number-of-items">
+        <button class="minus-item">
+          <img src="./images/icon-minus.svg" alt="minus" class="minus" />
+        </button>
+        <div class="items">
+          <p class="total-items">0</p>
+        </div>
+        <button class="plus-item">
+          <img src="./images/icon-plus.svg" alt="plus" class="plus" />
+        </button>
+      </div>
+      <button class="add-to-cart">
+        <img src="./images/icon-cart.svg" alt="cart icon" class="cart" /> Add to
+        cart
+      </button>
+    </div>
+  </body>
+</html>
