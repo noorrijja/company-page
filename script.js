@@ -31,7 +31,7 @@ var imgThree = document.querySelector(".img-3");
 var imgFour = document.querySelector(".img-4");
 
 nextImage = () => {
-  if (displayImage.style.display === "") {
+  if (displayImage.style.display === "block" || imgTwo.style.display === "") {
     imgTwo.style.display = "block";
     displayImage.style.display = "none";
     imgThree.style.display = "none";
@@ -47,6 +47,7 @@ nextImage = () => {
     imgTwo.style.display = "none";
     displayImage.style.display = "none";
     nextBtn.style.display = "none";
+    previousBtn.style.display = "block";
   } else {
     displayImage.style.display = "block";
     imgFour.style.display = "none";
@@ -72,7 +73,7 @@ prevImage = () => {
     imgThree.style.display = "none";
     imgFour.style.display = "none";
     nextBtn.style.display = "block";
-    // previousBtn.style.display = "none";
+    previousBtn.style.display = "none";
   } else {
     imgFour.style.display = "block";
     displayImage.style.display = "none";
@@ -135,11 +136,9 @@ const fullCart = document.querySelector(".cart-full");
 cartIcon.addEventListener("click", function () {
   const cartItems = document.querySelector(".total-cart-items");
   if (cartItems.innerHTML === "0") {
-    // emptyCart.style.display = "block";
     emptyCart.style.display =
       emptyCart.style.display === "block" ? "none" : "block";
   } else if (cartItems.innerHTML > 0) {
-    // fullCart.style.display = "block";
     fullCart.style.display =
       fullCart.style.display === "block" ? "none" : "block";
   } else {

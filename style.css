@@ -3,6 +3,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Kumbh Sans", sans-serif;
+  position: relative;
 }
 .user-profile .profile {
   width: 30px;
@@ -63,10 +64,15 @@ body {
   justify-content: space-between;
 }
 .expanded-menu-icon {
-  display: none;
-  flex-direction: column;
   width: 60%;
   min-height: 100vh;
+  background-color: white;
+  box-shadow: 3px 0 10px rgba(92, 89, 89, 0.5);
+  position: absolute;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  z-index: 999;
 }
 button.close {
   display: flex;
@@ -303,6 +309,10 @@ button.close {
   width: 100%;
   padding-block: 4%;
   border-radius: 6px;
+  margin-block-start: 4%;
+}
+.checkout:hover {
+  background-color: hsl(26, 90%, 35%);
 }
 .content {
   display: flex;
@@ -310,4 +320,7 @@ button.close {
   justify-content: center;
   align-items: flex-start;
   margin-block: 10%;
+}
+hr {
+  opacity: 40%;
 }
