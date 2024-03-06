@@ -47,6 +47,10 @@ body {
   line-height: 20px;
   border-radius: 100%;
 }
+.cart-image {
+  background-color: transparent;
+  border: none;
+}
 .total-cart-items {
   margin-block: 0;
   color: white;
