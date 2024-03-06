@@ -223,7 +223,7 @@ button.close {
   font-weight: 400;
 }
 .cart-full {
-  display: none;
+  display: block;
   width: 90%;
   border-radius: 12px;
   position: absolute;
