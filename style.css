@@ -34,7 +34,7 @@ body {
 }
 .notification {
   display: block;
-  background-color: hsl(26, 100%, 55%);
+  background-color: hsl(26, 98%, 57%);
   font-size: 13px;
   font-weight: 400;
   padding: 0;
@@ -144,7 +144,7 @@ button.close {
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  color: hsl(26, 100%, 55%);
+  color: hsl(26, 98%, 57%);
 }
 .product-title {
   font-size: 28px;
@@ -176,7 +176,7 @@ button.close {
 .off {
   font-size: 14px;
   font-weight: 700;
-  color: hsl(26, 100%, 55%);
+  color: hsl(26, 98%, 57%);
   width: 48px;
   height: 22px;
   display: flex;
@@ -212,7 +212,7 @@ button.close {
   align-items: center;
   gap: 4%;
   color: white;
-  background-color: hsl(26, 100%, 55%);
+  background-color: hsl(26, 98%, 57%);
   border: none;
   border-radius: 12px;
   font-size: 15px;
@@ -298,7 +298,7 @@ button.close {
   color: white;
   font-size: 15px;
   font-weight: 400;
-  background-color: hsl(26, 100%, 55%);
+  background-color: hsl(26, 98%, 57%);
   border: none;
   width: 100%;
   padding-block: 4%;
