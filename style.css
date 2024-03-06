@@ -29,6 +29,28 @@ body {
   justify-content: flex-start;
   align-items: center;
 }
+.nav-right {
+  position: relative;
+}
+.notification {
+  display: block;
+  background-color: hsl(26, 100%, 55%);
+  font-size: 13px;
+  font-weight: 400;
+  padding: 0;
+  position: absolute;
+  left: 22%;
+  top: -24%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  border-radius: 100%;
+}
+.total-cart-items {
+  margin-block: 0;
+  color: white;
+}
 .nav-items {
   padding-inline: 6%;
   padding-block: 5%;
