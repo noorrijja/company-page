@@ -18,3 +18,7 @@ closeMenu.addEventListener("click", function () {
     expandedMenu.style.display = "flex";
   }
 });
+
+var imageGallery = document.querySelectorAll(".images");
+
+var firstImage = imageGallery[0];

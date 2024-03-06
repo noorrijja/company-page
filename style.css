@@ -59,10 +59,10 @@ body {
   justify-content: space-between;
 }
 .expanded-menu-icon {
-  width: 60%;
-  height: 100vh;
   display: none;
   flex-direction: column;
+  width: 60%;
+  min-height: 100vh;
 }
 button.close {
   display: flex;
@@ -245,7 +245,7 @@ button.close {
   font-weight: 400;
 }
 .cart-full {
-  display: block;
+  display: none;
   width: 90%;
   border-radius: 12px;
   position: absolute;
