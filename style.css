@@ -219,6 +219,9 @@ button.close {
   font-weight: 400;
   box-shadow: 0 5px 15px rgba(233, 166, 72, 0.5);
 }
+.add-to-cart:focus {
+  background-color: hsl(26, 90%, 35%);
+}
 /* .cart {
   display: flex;
 } */

@@ -22,11 +22,6 @@ closeMenu.addEventListener("click", function () {
 const previousBtn = document.querySelector(".prev");
 const nextBtn = document.querySelector(".next");
 
-//add event listener to both the buttons.
-// get the first image on the basis of which we'll move the slider
-
-// image ka url le k wo bhi me change kr skti
-
 var displayImage = document.querySelector(".img-1");
 
 var imgTwo = document.querySelector(".img-2");
@@ -115,15 +110,40 @@ minusItem = () => {
 plusBtn.addEventListener("click", plusItem);
 minusBtn.addEventListener("click", minusItem);
 
+const addToCart = document.querySelector(".add-to-cart");
+
+const saleElement = document.querySelector(".sale");
+
+const itemPrice = parseFloat(saleElement.innerHTML.replace("$", ""));
+
+const bill = document.querySelector(".total-price");
+
 const cartItems = document.querySelector(".total-cart-items");
-const emptyCart = document / querySelector(".cart-empty");
+
+addToCart.addEventListener("click", function () {
+  var quantity = cartItems.innerHTML;
+  const totalPrice = quantity * itemPrice;
+  bill.innerHTML =
+    "$" + itemPrice + " " + "x" + " " + " " + quantity + " " + "$" + totalPrice;
+});
 
 const cartIcon = document.querySelector(".cart");
+
+const emptyCart = document.querySelector(".cart-empty");
+
+const fullCart = document.querySelector(".cart-full");
 cartIcon.addEventListener("click", function () {
-  // if (cartItems === 0 || emptyCart.style.display === "block") {
-  //   emptyCart.style.display = "none";
-  // } else {
-  //   emptyCart.style.display = "block";
-  // }
-  alert("helloo");
+  const cartItems = document.querySelector(".total-cart-items");
+  if (cartItems.innerHTML === "0") {
+    // emptyCart.style.display = "block";
+    emptyCart.style.display =
+      emptyCart.style.display === "block" ? "none" : "block";
+  } else if (cartItems.innerHTML > 0) {
+    // fullCart.style.display = "block";
+    fullCart.style.display =
+      fullCart.style.display === "block" ? "none" : "block";
+  } else {
+    emptyCart.style.display = "none";
+    fullCart.style.display = "none";
+  }
 });
